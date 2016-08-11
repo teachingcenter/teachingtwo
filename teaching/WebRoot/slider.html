@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>slider.html</title>
+	<link rel="stylesheet" href="css/Slider-style.css">
+
+  </head>
+  
+  <body>
+   <div id="jquery-script-menu"> </div>
+<div class="slider">
+  <div class="slider-container">
+    <div class="slider-wrapper">
+      <div class="slide"> <img src="images/img1.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+      <div class="slide"> <img src="images/img2.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+      <div class="slide"> <img src="images/img3.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+      <div class="slide"> <img src="images/img4.jpg" alt="jQuery Slider with CSS Transitions"> </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script> 
+<script src="js/slider.js"></script> 
+<script type="text/javascript">
+	(function() {
+		Slider.init({
+			target: $('.slider'),
+			time: 6000
+		});
+	})();
+</script>
+  </body>
+</html>
